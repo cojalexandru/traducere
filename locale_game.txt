@@ -944,6 +944,7 @@ DETAILS_TOOLTIP_ATTBONUS_SWORD	Sparge apararea sabiei: Reduce apararea sabiei ad
 DETAILS_TOOLTIP_ATTBONUS_METIN	Putere impotriva pietrelor Metin: Provoca daune pietrelor Metin.
 DETAILS_TOOLTIP_ATTBONUS_TWOHAND	Sparge apararea armelor cu doua maini: Reduce apararea armelor cu doua maini a adversarului.
 DETAILS_TOOLTIP_RESIST_MOUNT_FALL	Rezistenta la caderi de pe cal: Reduce sansa de a cadea de pe cal.
+
 QUEST_CATEGORY_00	Misiuni principale
 QUEST_CATEGORY_01	Misiuni secundare
 QUEST_CATEGORY_02	Misiuni de cercetare
@@ -1393,6 +1394,10 @@ KEY_B_LALT	ALT + B
 KEY_B_LCONTROL	CTRL + B
 KEY_B_LSHIFT	SHIFT + B
 KEY_C	C
+KEY_COMMA	,
+KEY_COMMA_LALT	ALT + ,
+KEY_COMMA_LCONTROL	CTRL + ,
+KEY_COMMA_LSHIFT	SHIFT + ,
 KEY_C_LALT	ALT + C
 KEY_C_LCONTROL	CTRL + C
 KEY_C_LSHIFT	SHIFT + C
@@ -1443,9 +1448,6 @@ KEY_F8_LALT	ALT + F8
 KEY_F8_LCONTROL	CTRL + F8
 KEY_F8_LSHIFT	SHIFT + F8
 KEY_F9	F9
-KEY_F9_LALT	ALT + F9
-KEY_F9_LCONTROL	CTRL + F9
-KEY_F9_LSHIFT	SHIFT + F9
 KEY_F9_LALT	ALT + F9
 KEY_F9_LCONTROL	CTRL + F9
 KEY_F9_LSHIFT	SHIFT + F9
@@ -1588,29 +1590,14 @@ LOGIN_INPUT_PASSWORD	Introdu parola.
 LOGIN_PROCESSING	Se proceseaza conectarea...
 MALL_CANNOT_INSERT	Nu ai loc pentru acest obiect.
 MALL_PASSWORD_TITLE	Parola
-MAP_A1	Regiunea Yongan
-MAP_A2	Valea Seungryong
+MAP_A1	Yongan B�lgesi
+MAP_A2	Seungryong Vadisi
 MAP_A2_1	
-MAP_A3	Regiunea Yayang
+MAP_A3	Yayang B�lgesi
 MAP_AG	Jungrang
-MAP_B1	Regiunea Joan
-MAP_B2	Valea Imji
-MAP_B3	Regiunea Bokjung
-MAP_C1	Regiunea Pyungmoo
-MAP_C2	Valea Jangbi
-MAP_C3	Regiunea Huan
-MAP_D1	Regiunea Suno
-MAP_D2	Valea Yongbi
-MAP_D3	Regiunea Jangdan
-MAP_E1	Regiunea Samarkand
-MAP_E2	Valea Dragon
-MAP_E3	Regiunea Hyunmu
-MAP_F1	Regiunea Shinsoo
-MAP_F2	Valea Baekho
-MAP_F3	Regiunea Chu
-MAP_G1	Regiunea Jangan
-MAP_G2	Valea Hongbi
-MAP_G3	Regiunea Pyung
+MAP_B1	Joan B�lgesi
+MAP_B2	Imji Vadisi
+MAP_B3	Bokjung B�lgesi
 MAP_BAY	Golf de Jad
 MAP_BAYBLACKSAND	Golf de Jad
 MAP_BG	Waryong
@@ -1739,10 +1726,8 @@ MINIMAP_INC_SCALE	Apropie
 MINIMAP_OBSERVER_COUNT	%d spectatori
 MINIMAP_SHOW_AREAMAP	Deschide harta generala
 MINI_GAME_RUMI_DISCARD_QUESTION	Esti sigur ca vrei sa arunci aceasta carte?
-MINI_GAME_RUMI_EXIT_QUESTION	Vrei sa inchei jocul si sa incasezi castigurile?
-In acest caz, punctele tale si cartile ramase vor fi resetate!
-MINI_GAME_RUMI_START_QUESTION	Trebuie sa platesti %d Yang pentru a intra in joc. De asemenea, trebuie sa detii %d seturi de carti.
-Pornesti jocul?
+MINI_GAME_RUMI_EXIT_QUESTION	Vrei sa inchei jocul si sa incasezi castigurile? \nIn acest caz, punctele tale si cartile ramase vor fi resetate!
+MINI_GAME_RUMI_START_QUESTION	Trebuie sa platesti %d Yang pentru a intra in joc. De asemenea, trebuie sa detii %d seturi de carti. \nPornesti jocul?
 MINUTE	Minute
 MONETARY_UNIT0	Yang
 MONETARY_UNIT1	Zeci de mii
@@ -1828,13 +1813,9 @@ PET_SKILL_DELETE_QUESTION_DLG_MSG	Abilitatile sunt acum disponibile.
 PET_SKILL_LEARN_QUESTION_DLG_MSG	Doresti sa incepi antrenamentul eroului cu "%s"?
 PET_SKILL_TOOLTIP_COOLTIME	Timp de reincarcare %d secunde
 PET_SKILL_TOOLTIP_DURATION	Durata: %d secunde
-PET_SKILL_TOOLTIP_HEAL	Daca valoarea ta HP scade sub %%20 
- exista o sansa de %%%d sa-ti cresti valoarea HP cu %d.	SAA
-PET_SKILL_TOOLTIP_INVINVIBILITY	Daca valoarea ta HP scade sub %%10 
- exista o sansa de %%%d ca personajul tau sa devina invincibil. 
- Durata efectului: %.1f secunde.	SAA
-PET_SKILL_TOOLTIP_REMOVAL	Daca personajul tau este afectat de efecte precum otrava, incetinire 
- sau sangerare, exista o sansa de %%%d sa elimine imediat aceste efecte.	SAN
+PET_SKILL_TOOLTIP_HEAL	Daca valoarea ta HP scade sub %%20 \nexista o sansa de %%%d sa-ti cresti valoarea HP cu %d.	SAA
+PET_SKILL_TOOLTIP_INVINVIBILITY	Daca valoarea ta HP scade sub %%10 \n exista o sansa de %%%d ca personajul tau sa devina invincibil. \nDurata efectului: %.1f secunde.	SAA
+PET_SKILL_TOOLTIP_REMOVAL	Daca personajul tau este afectat de efecte precum otrava, incetinire \n sau sangerare, exista o sansa de %%%d sa elimine imediat aceste efecte.	SAN
 PET_SKILL_UPGRADE_QUESTION_DLG_MSG1	Doresti sa promovezi antrenamentul eroului la urmatorul nivel?
 PET_SKILL_UPGRADE_QUESTION_DLG_MSG2	Pret: %s
 PET_TOOLTIP_COSTUME_BONUS	
@@ -1917,50 +1898,56 @@ PRIVATESHOPSEARCH_UNIQUE	Unic
 PRIVATESHOPSEARCH_USEITEM	Obiecte consumabile
 PRIVATESHOPSEARCH_USESPECIAL	Altceva
 PRIVATESHOPSEARCH_WEAPON	Arme
-PRIVATESHOPSEARCH_WEAPON_1	Sabie cu o mana
-PRIVATESHOPSEARCH_WEAPON_2	Sabie cu doua maini
-PRIVATESHOPSEARCH_WEAPON_3	Bata
-PRIVATESHOPSEARCH_WEAPON_4	Topor
-PRIVATESHOPSEARCH_WEAPON_5	Halberd
-PRIVATESHOPSEARCH_WEAPON_6	Lance
-PRIVATESHOPSEARCH_WEAPON_7	Cutit
-PRIVATESHOPSEARCH_WEAPON_8	Pumnal
-PRIVATESHOPSEARCH_WEAPON_9	Arc
-PRIVATE_SHOP_CREATE_TITLE	Creeaza Magazin Privat
-PRIVATE_SHOP_DELETE_TITLE	Sterge Magazin Privat
-PRIVATE_SHOP_EDIT_BUTTON	Detalii Magazin Privat
-PRIVATE_SHOP_EDIT_BUTTON_TOOLTIP	Fa clic pentru a modifica obiectele din magazinul tau privat.
-PRIVATE_SHOP_EDIT_ITEM_COUNT_TOOLTIP	Fa clic pentru a ajusta cantitatea acestui obiect.
-PRIVATE_SHOP_EDIT_ITEM_PRICE_TOOLTIP	Fa clic pentru a ajusta pretul acestui obiect.
-PRIVATE_SHOP_EDIT_ITEM_TITLE	Editeaza Obiecte
-PRIVATE_SHOP_EDIT_TITLE	Editeaza Magazin Privat
-PRIVATE_SHOP_EDIT_TOTAL_MONEY	Total: %s Yang
-PRIVATE_SHOP_ITEM_COUNT	Marja: %d/%d
-PRIVATE_SHOP_NEED_EMPTY_SPACE	Va fi nevoie de spatiu gol in inventar pentru a cumpara acest obiect.
-PRIVATE_SHOP_OPEN_TITLE	Deschide Magazin Privat
-PRIVATE_SHOP_QUICK_EDIT_BUTTON_TOOLTIP	Fa clic pentru a adauga rapid obiectul selectat in inventar la magazinul privat.
-PRIVATE_SHOP_SEARCH_TITLE	Cauta in Magazin Privat
-PRIVATE_SHOP_SELL_FAIL_ALREADY_OPEN	Alt jucator are deja deschis un magazin privat.
-PRIVATE_SHOP_SELL_FAIL_CANNOT_OPEN_HERE	Nu poti deschide un magazin privat in aceasta zona.
-PRIVATE_SHOP_SELL_FAIL_DISTANCE_TOO_FAR	Prea departe de magazinul privat.
-PRIVATE_SHOP_SELL_FAIL_FIND_OWNER	Esti prea departe de proprietarul magazinului privat.
-PRIVATE_SHOP_SELL_FAIL_INVENTORY_FULL	Inventarul tau este plin.
-PRIVATE_SHOP_SELL_FAIL_IN_SHOP_MODE	Deja ai deschis un magazin privat.
-PRIVATE_SHOP_SELL_FAIL_INVALID_ITEM	Obiectul nu poate fi vandut in magazinul privat.
-PRIVATE_SHOP_SELL_FAIL_MAX_DISTANCE_DETECTED	Prea departe de magazinul privat.
-PRIVATE_SHOP_SELL_FAIL_NO_ENOUGH_MONEY	Jucatorul nu are suficient Yang pentru a cumpara acest obiect.
-PRIVATE_SHOP_SELL_FAIL_NOT_ENOUGH_MONEY	Nu ai suficient Yang pentru a cumpara acest obiect.
-PRIVATE_SHOP_SELL_FAIL_OWNER_DEAD	Proprietarul magazinului privat este mort.
-PRIVATE_SHOP_SELL_FAIL_PRICE_CHANGED	Pretul acestui obiect a fost schimbat.
-PRIVATE_SHOP_SELL_FAIL_START_TRADING	Tranzactia nu poate fi efectuata in timp ce esti in alta actiune.
-PRIVATE_SHOP_SELL_FAIL_TARGET_DEAD	Esti mort si nu poti face tranzactii.
-PRIVATE_SHOP_SELL_FAIL_TOO_FAR	Prea departe de magazinul privat.
-PRIVATE_SHOP_TITLE_FORMAT	Magazin Privat: %s
-PRIVATE_SHOP_VIEW_TITLE	Vizualizeaza Magazin Privat
-QUEST_CONFIRM_ACCEPT	Accepti misiunea?
-QUEST_CONFIRM_CANCEL	Anulezi misiunea?
-QUEST_CONFIRM_COMPLETE	Completezi misiunea?
-QUEST_CONFIRM_REJECT	Refuzi misiunea?
+PRIVATESHOPSEARCH_WHITE_PEARL	Beyaz �nci
+ PRIVATESHOPSEARCH_WRIST	Bilezik
+ PRIVATE_SHOP_CANNOT_SELL_ITEM	Bu e�yay� �zel depoda satamazs�n.
+ PRIVATE_SHOP_CLOSE_QUESTION	�zel depoyu kapatmak istiyor musun?
+ PRIVATE_SHOP_INPUT_NAME_DIALOG_TITLE	�zel deponun ismi
+ PRIVATE_SHOP_INPUT_PRICE_DIALOG_TITLE	Fiyat
+ PVP_LEVEL0	Kahraman
+ PVP_LEVEL1	Soylu
+ PVP_LEVEL2	�yi
+ PVP_LEVEL3	Arkada��a
+ PVP_LEVEL4	Tarafs�z
+ PVP_LEVEL5	Agresif
+ PVP_LEVEL6	Hileli
+ PVP_LEVEL7	K�t� Niyetli
+ PVP_LEVEL8	Zalim
+ PVP_MODE_GUILD	PvP - Lonca etkinle�tirildi
+ PVP_MODE_KILL	PvP - Serbest etkinle�tirildi
+ PVP_MODE_NORMAL	PvP - Bar�� etkinle�tirildi.
+ PVP_MODE_PROTECT	PvP - Koruma etkinle�tirildi.
+ PVP_MODE_REVENGE	PvP - D��man etkinle�tirildi
+ PVP_OPTION_KILL	Serbest
+ PVP_OPTION_NORMAL	Bar��
+ PVP_OPTION_PROTECT	Koruma
+ PVP_OPTION_REVENGE	D��manca
+ QUEST_APPEND	Yeni g�rev geldi.
+ QUEST_MIN	Dk.
+ QUEST_SEC	Sn.
+ QUEST_TIMEOVER	Zaman doldu.
+ QUEST_UNLIMITED_TIME	Zaman s�n�r� yok.
+ QUEST_ZEROSEC	0 sn.
+ QUICKSLOT_REGISTER_DISABLE_ITEM	Bu nesne h�zl� eri�im alan�na eklenemez.
+ RECEIVE_MESSAGE	%s mesaj g�nderdi.
+ REFINE_COST	Y�kseltme bedeli: %d Yang
+ REFINE_DESTROY_WARNING	E�ya ar�nd�r�l�rken yok olabilir.
+ REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	Bunlar iyile�tirme yap�larak y�kseltilecek,
+ REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	fakat hata vermesi durumunda nesne yok olabilir. Devam etmek istiyor musunuz?
+ REFINE_DOWN_GRADE_WARNING	E�yan�n ar�nd�r�l�rken de�eri d��ebilir.
+ REFINE_DO_YOU_SEPARATE_METIN	Mevcut olan t�m Ruh Ta�lar� ��kar�ls�n m�?
+ REFINE_FAILURE	Ba�aramad�n.
+ REFINE_FAILURE_CAN_NOT_ATTACH	Bu nesneye %s katamazs�n.
+ REFINE_FAILURE_EQUIP_ITEM	Kullan�lmakta olan nesneleri geli�tiremezsin.
+ REFINE_FAILURE_METIN_INSEPARABLE_ITEM	��karabilece�iniz ruh ta�� yok.
+ REFINE_FAILURE_NEED_BETTER_SCROLL	Daha iyi bir y�kseltme Rolesine ihtiyac�n�z var.
+ REFINE_FAILURE_NO_GOLD_SOCKET	Burada %s eklemek i�in alt�n yuva yok.
+ REFINE_FAILURE_NO_MORE_SOCKET	Daha fazla slot ekleyemezsin.
+ REFINE_FAILURE_NO_SOCKET0	%s eklemek i�in bo� slot yok.
+ REFINE_FAILURE_SOCKET_DISABLE_ITEM	Bu nesneye slot ekleyemezsin.
+ REFINE_FAILURE_UPGRADE_DISABLE_ITEM	Bu nesne y�kseltilemez.
+ REFINE_SUCCESS	Nesnenin y�kseltilmesi ba�ar�yla tamamland�.
+ REFINE_SUCCESS_PROBALITY	Y�kseltme �ans� %%%d
 REFINE_WARNING2	Doresti sa continui?
 SAFEBOX_ERROR	Ai introdus o parola gresita.
 SAFEBOX_SELL_DISABLE_SAFEITEM	Nu poti vinde obiecte protejate.
